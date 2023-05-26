@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formacom</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+      <style>
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        li {
+          display: inline;
+        }
+      </style>
+</head>
+<body>  
+
+    <img src="img/website_logo_transparent_background.png" alt="">
+                <h1>Centro de Estudios</h1>
+  
+    <div class="dropdown">
+        <button class="b1">Alumnos</button>
+        <div class="dropdown-content">
+            <a href="#">Altas</a>
+            <a href="#">Bajas</a>
+            <a href="#">Siguen</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="b2">Cursos</button>
+        <div class="dropdown-content">
+            <a href="#">Html</a>
+            <a href="#">Php</a>
+            <a href="#">Mysql</a>
+            <a href="#">Css</a>
+            <a href="#">Js</a>
+        </div>
+
+    </div>
+
+    <div class="dropdown">
+        <button class="b3">Precios</button>
+        <div class="dropdown-content">
+            <a href="#">60€</a>
+            <a href="#">60€</a>
+            <a href="#">40€</a>
+            <a href="#">20€</a>
+            <a href="#">20€</a>
+        </div>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="mov">
+                                
+                            </div>
+                            </div>
+                            
+                            <h2>Registro de Alumnos</h2>
+                            <form class="formu" action="guardar_alumno.php" method="POST">
+                              <label for="nombre">Nombre:</label>
+                              <input type="text" name="nombre" required><br><br>
+                          
+                              <label for="apellido">Apellido:</label>
+                              <input type="text" name="apellido" required><br><br>
+                          
+                              <label for="edad">Edad:</label>
+                              <input type="number" name="edad" required><br><br>
+            
+                              <label for="edad">Email</label>
+                              <input type="text" name="email" required><br><br>
+                          
+                              <input type="submit" value="Guardar">
+                            </form>
+                    </div>
+
+                </div>
+                
+                    <br>
+         
+                
+            </div>
+
+        </div>
+
+    </div>
+
+ 
+
+</body>
+</html>
